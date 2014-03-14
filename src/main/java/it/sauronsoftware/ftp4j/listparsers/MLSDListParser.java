@@ -41,13 +41,15 @@ public class MLSDListParser implements FTPListParser {
 
 	/**
 	 * Date format 1 for MLSD date facts (supports millis).
+     * (RFC 3659 7.5.3 and 2.3,https://tools.ietf.org/html/rfc3659#section-7.5.3)
 	 */
-	private static final DateFormat MLSD_DATE_FORMAT_1 = new SimpleDateFormat("yyyyMMddhhmmss.SSS Z");
+	private static final DateFormat MLSD_DATE_FORMAT_1 = new SimpleDateFormat("yyyyMMddHHmmss.SSS Z");
 
 	/**
 	 * Date format 2 for MLSD date facts (doesn't support millis).
+     * (RFC 3659 7.5.3 and 2.3,https://tools.ietf.org/html/rfc3659#section-7.5.3)
 	 */
-	private static final DateFormat MLSD_DATE_FORMAT_2 = new SimpleDateFormat("yyyyMMddhhmmss Z");
+	private static final DateFormat MLSD_DATE_FORMAT_2 = new SimpleDateFormat("yyyyMMddHHmmss Z");
 
 	public FTPFile[] parse(String[] lines) throws FTPListParseException {
 		ArrayList list = new ArrayList();
