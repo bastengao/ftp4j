@@ -4,6 +4,8 @@ this is fork from http://www.sauronsoftware.it/projects/ftp4j/.
 
 I fix some bugs, and i am hosing this artifact to [my repository](https://github.com/bastengao/mvn-repository).
 
+* fix: MLSD modify time format #c57edf6136
+
 add dependency to your project.
 
 ```xml
